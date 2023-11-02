@@ -1,4 +1,69 @@
+/*----------FOOTER MAIN----------*/
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 3px;
+    top: 0;
+    left: 0;
+}
 
+.itemsFooter{
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.listasFooter{
+    list-style: none;
+    text-align: center;
+    display: inline;
+    justify-content: space-between;
+    margin: 15px 100px;
+}
+
+
+
+.titulosFooter{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: white;
+}
+
+/*--------------FOOTER PRODUCTOS-----------*/
+.colorFooterProductos{
+    background-color: black;
+}
+
+
+
+
+/*----------fOOTER SOBRE NOS---------*/
+.colorFooterJordans{
+    background-color: gray;
+}
+
+
+
+/*----------FOOTER PREGUNTAS FREC---------*/
+.colorFooterYeezys {
+    background-color: grey;
+}
+.letraFooterYeezys {
+    ul {
+        li {
+            color: white;
+        }
+    }
+}
+
+
+
+/*---------Footer CONTACTOS--------*/
+.colorFooterContactos{
+    background-color: black;
+}
 
 
 
