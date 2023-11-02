@@ -1,3 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*-----MEDIA QUIRES-------*/
+@media (max-width: 768px) {
+  .container-fluid a {
+    font-size: 40px;
+  }
+  .carousel-item img {
+    height: auto;
+  }
+  .cardUno {
+    margin: 5px auto;
+    border-radius: 5%;
+  }
+  .primeraFila {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jordanRojas {
+    margin-right: 100px;
+  }
+  .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .travisMarrones {
+    margin-right: 180px;
+    margin-top: 40px;
+  }
+  .terceraFila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .yeezysNegras {
+    margin-right: 180px;
+    margin-top: 40px;
+  }
+  .cuartaFila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .vansMarrones {
+    margin-right: 180px;
+    margin-top: 40px;
+  }
+  .quintaFila {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .forumBlancas {
+    margin-right: 180px;
+    margin-top: 30px;
+  }
+  .titulosProductos h2 {
+    font-size: 10px;
+    margin-left: -20px;
+  }
+  .colorFooter {
+    background-color: #000000;
+    padding: 20px;
+  }
+  .itemsFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 180px;
+  }
+  .listasFooter {
+    flex: 0 0 calc(33.33% - 20px);
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+  .titulosFooter {
+    font-weight: bold;
+  }
+  .formulario {
+    padding: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .itemsFooter {
+    margin-left: 20px;
+  }
+  .formulario {
+    padding: 20px;
+  }
+  .fotoEquipo {
+    width: auto;
+  }
+  .misionVision {
+    width: auto;
+  }
+  .tiendaVirtual {
+    width: auto;
+  }
+}
+@media (max-width: 320px) {
+  .container-fluid a {
+    font-size: 25px;
+  }
+  .carousel-item img {
+    height: auto;
+  }
+  .cardUno {
+    margin: 10px auto;
+    border-radius: 5%;
+    width: auto;
+  }
+  .itemsFooter {
+    margin-left: 15px;
+  }
+  .formulario {
+    padding: 20px;
+  }
+  .navPage {
+    padding: 20px;
+  }
+  .fotoEquipo {
+    width: auto;
+  }
+  .misionVision {
+    width: 100%;
+  }
+  .tiendaVirtual {
+    width: 100%;
+  }
+  .itemsFooter {
+    width: 100%;
+  }
+}
 /*-----HEADER HOMEPAGE------*/
 header {
   background-color: black;
@@ -6,17 +142,15 @@ header {
   top: 0;
   left: 0;
 }
-header img {
-  width: 80px;
-}
-
-.mainLogo {
+header .mainLogo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.mainTitle {
+header img {
+  width: 80px;
+}
+header .mainTitle {
   color: white;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -24,16 +158,14 @@ header img {
   margin-bottom: 30px;
 }
 
-.container-fluid a {
+nav .navbar {
+  padding-bottom: 50px;
+}
+nav .container-fluid a {
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
-
-.navbar {
-  padding-bottom: 50px;
-}
-
-.custom-toggler {
+nav .container-fluid .custom-toggler {
   color: white;
   border-color: white;
   background-color: white;
@@ -45,59 +177,64 @@ header img {
   font-family: "Times New Roman", Times, serif;
 }
 
+/*-------HEADER PRODUCTOS------*/
+.headerProductos {
+  background-color: black;
+}
+
+/*----------header SOBRE NOSOTROS--------*/
+.headerJordans {
+  background-color: gray;
+}
+
+/*-------HEADER PREGUNTAS FRECUENTES----------*/
+.headerYeezys {
+  background-color: grey;
+}
+
+/*-------------HEADER CONTACTO--------------*/
+.headerContacto {
+  background-color: black;
+}
+
 /*----------MAIN HOMEPAGE----------*/
-.fondoMain {
+main .suscribiteClub {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-bottom: 1px;
+}
+main .suscribiteClub h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .subTitulos {
+  background-color: black;
+  margin-top: -5px;
+}
+main .subTitulo1 {
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+}
+main .subTitulo1 h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 0px;
+}
+main .subTitulo2 {
+  text-align: center;
+  color: white;
+  padding-bottom: 1px;
+}
+main .subTitulo2 h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .fondoMain {
   background-image: url(https://m.media-amazon.com/images/I/71AbdOgwNuL._AC_UF894,1000_QL80_.jpg);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 1px;
-}
-
-.suscribiteClub {
-  background-color: black;
-  text-align: center;
-  color: white;
-  padding-bottom: 1px;
-}
-.suscribiteClub h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.subTitulos {
-  background-color: black;
-  margin-top: -5px;
-}
-
-.subTitulo1 {
-  text-align: center;
-  color: white;
-  padding-top: 5px;
-}
-.subTitulo1 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-bottom: 0px;
-}
-
-.subTitulo2 {
-  text-align: center;
-  color: white;
-  padding-bottom: 1px;
-}
-.subTitulo2 h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.imagenJordans img {
-  width: 100%;
-  height: 760px;
-}
-
-.cajasHome {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .letraCajas h2 {
@@ -154,6 +291,140 @@ header img {
   font-family: "Times New Roman", Times, serif;
 }
 
+/*-----------MAIN PRODUCTOS-------------------------*/
+.fondoProductos {
+  background-image: url(https://images.unsplash.com/photo-1621146027714-e8921770f8d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60);
+  padding-bottom: 1px;
+}
+
+main .primeraFila {
+  display: flex;
+  justify-content: center;
+}
+main .titulosProductos {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: underline;
+  margin-left: 40px;
+}
+main .colorCajasProd {
+  background-color: rgb(92, 89, 89);
+}
+main .colorCajasProd .botonProductos {
+  margin-top: -20px;
+  padding: 4px;
+  border-radius: 7px;
+  border-bottom: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+main .colorCajasProd .botonProductos:hover {
+  color: burlywood;
+  transform: scale(1.05);
+}
+main .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila {
+  display: flex;
+  justify-content: center;
+}
+/*-------------MAIN PREG FREC----------*/
+main .titulosPreguntas {
+  text-align: center;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+main .metodosPago, main .entregas, main .devoluciones, main .seguimiento {
+  display: flex;
+  align-items: center;
+}
+main .metodosPago img, main .entregas img, main .devoluciones img, main .seguimiento img {
+  width: 400px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  border-radius: 20%;
+}
+
+.colorPreguntas {
+  background-color: rgb(158, 154, 154);
+  padding-bottom: 1px;
+}
+
+/*-------------MAIN SOBRE NOS----------*/
+main .titulosSobreNos {
+  margin-left: 20px;
+}
+main .titulosSobreNos h2 {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+main .titulosSobreNos .fotoEquipo {
+  width: 400px;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
+main .titulosSobreNos .misionVision {
+  width: 400px;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
+main .titulosSobreNos .tiendaVirtual {
+  width: 400px;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
+
+.mainSobrenos {
+  background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGFib3V0JTIwdXMlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  padding-bottom: 1px;
+  background-repeat: no-repeat;
+}
+
+/*----------------MAIN CONTACTO------------*/
+.fondoContacto {
+  background-image: url(https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGZvbmRvJTIwcGFnaW5hJTIwZGUlMjBjb250YWN0b3xlbnwwfHwwfHx8MA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .imagenContacto {
+  width: 45%;
+  margin-left: 25%;
+  border-radius: 50%;
+  border-style: double;
+}
+main .subtituloContacto {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+main .formulario {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+main .formulario .btn {
+  background-color: black;
+}
+main .tituloContacto {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .parrafoContacto {
+  margin-bottom: 20px;
+}
+main .navPage {
+  display: flex;
+  justify-content: center;
+}
+
 /*----------FOOTER MAIN----------*/
 footer {
   background-color: black;
@@ -162,91 +433,24 @@ footer {
   top: 0;
   left: 0;
 }
-
-.itemsFooter {
+footer .itemsFooter {
   padding: 2px;
   display: flex;
   justify-content: space-between;
   color: white;
 }
-
-.listasFooter {
+footer .itemsFooter .listasFooter {
   list-style: none;
   text-align: center;
   display: inline;
   justify-content: space-between;
   margin: 15px 100px;
 }
-
-.titulosFooter {
+footer .itemsFooter .listasFooter .titulosFooter {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
   color: white;
-}
-
-/*-------HEADER PRODUCTOS------*/
-.headerProductos {
-  background-color: black;
-}
-
-.letraProductos {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/*-----------MAIN PRODUCTOS-------------------------*/
-.fondoProductos {
-  background-image: url(https://images.unsplash.com/photo-1621146027714-e8921770f8d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60);
-  padding-bottom: 1px;
-}
-
-.titulosProductos {
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-decoration: underline;
-  margin-left: 20px;
-}
-
-.primeraFila {
-  display: flex;
-  justify-content: center;
-}
-
-.colorCajasProd {
-  background-color: rgb(92, 89, 89);
-}
-
-.segundaFila {
-  display: flex;
-  justify-content: center;
-}
-
-.terceraFila {
-  display: flex;
-  justify-content: center;
-}
-
-.cuartaFila {
-  display: flex;
-  justify-content: center;
-}
-
-.quintaFila {
-  display: flex;
-  justify-content: center;
-}
-
-.botonProductos {
-  margin-top: -20px;
-  padding: 4px;
-  border-radius: 7px;
-  border-bottom: black;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.botonProductos:hover {
-  color: burlywood;
-  transform: scale(1.05);
 }
 
 /*--------------FOOTER PRODUCTOS-----------*/
@@ -254,84 +458,9 @@ footer {
   background-color: black;
 }
 
-/*----------header SOBRE NOSOTROS--------*/
-.headerJordans {
-  background-color: gray;
-}
-
-.letraJordans {
-  font-family: "Times New Roman", Times, serif;
-}
-
-/*-------------MAIN SOBRE NOS----------*/
-.mainSobrenos {
-  background-image: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhY2tncm91bmQlMjBpbWFnZSUyMGFib3V0JTIwdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60);
-  background-size: 100%;
-  padding-bottom: 1px;
-}
-
-.titulosSobreNos {
-  margin-left: 20px;
-}
-.titulosSobreNos h2 {
-  margin-bottom: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: underline;
-}
-
 /*----------fOOTER SOBRE NOS---------*/
 .colorFooterJordans {
   background-color: gray;
-}
-
-/*-------HEADER PREGUNTAS FRECUENTES----------*/
-.headerYeezys {
-  background-color: grey;
-}
-
-.colorYeezys {
-  color: white;
-}
-
-.letraYeezys {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.navYeezys ul li a {
-  color: white;
-}
-
-/*-------------MAIN PREG FREC----------*/
-.colorPreguntas {
-  background-color: rgb(158, 154, 154);
-  padding-bottom: 1px;
-}
-
-.titulosPreguntas {
-  text-align: center;
-  font-size: 40px;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: underline;
-}
-
-.metodosPago, .entregas, .devoluciones, .seguimiento {
-  display: flex;
-  align-items: center;
-}
-.metodosPago img, .entregas img, .devoluciones img, .seguimiento img {
-  width: 400px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  border-radius: 20%;
-}
-
-.seguimiento img {
-  margin-bottom: 20px;
 }
 
 /*----------FOOTER PREGUNTAS FREC---------*/
@@ -343,47 +472,10 @@ footer {
   color: white;
 }
 
-/*-------------HEADER CONTACTO--------------*/
-.headerContacto {
-  background-color: black;
-}
-
-/*----------------MAIN CONTACTO------------*/
-.formulario {
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background-color: black;
-}
-
-.imagenContacto {
-  width: 45%;
-  margin-left: 25%;
-}
-
-.tituloContacto {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-decoration: underline;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.subtituloContacto {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.parrafoContacto {
-  margin-bottom: 20px;
-}
-
 /*---------Footer CONTACTOS--------*/
 .colorFooterContactos {
   background-color: black;
+  margin-top: -20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
     /*-----MEDIA QUIRES-------*/
@@ -20,10 +21,10 @@
         }
         .primeraFila{
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
         .jordanRojas{
-            margin-right: 180px;
+            margin-right: 100px;
         }
         .segundaFila{
             flex-wrap: wrap;
@@ -58,8 +59,9 @@
             margin-top: 30px;
         }
     
-        .titulosProductos{
-            font-size: 22px;
+        .titulosProductos h2{
+            font-size: 10px;
+            margin-left: -20px;
         }
     
         .colorFooter {
@@ -84,10 +86,31 @@
         .titulosFooter {
             font-weight: bold; 
         }
+        .formulario{
+            padding: 20px;
+        }
     
     }
-    
-    @media(max-width:375px){
+
+    @media(max-width:425px){
+        .itemsFooter{
+            margin-left: 20px;
+        }
+        .formulario{
+            padding: 20px;
+        }
+        .fotoEquipo{
+            width: auto;
+        }
+        .misionVision{
+            width: auto;
+        }
+        .tiendaVirtual{
+            width: auto;
+        }
+    }
+
+    @media(max-width:320px){
         .container-fluid a{
             font-size: 25px;
         }
@@ -97,9 +120,31 @@
         .cardUno{
             margin: 10px auto;
             border-radius: 5%;
+            width: auto;
         }
         .itemsFooter{
             margin-left: 15px;
         }
+        .formulario{
+            padding: 20px;
+        }
+        .navPage{
+            padding: 20px;
+        }
+        .fotoEquipo{
+            width: auto;
+        }
+        .misionVision{
+            width: 100%;
+        }
+        .tiendaVirtual{
+            width: 100%;
+        }
+        .itemsFooter{
+            width: 100%;
+        }
     }
 
+
+        
+    

@@ -1,5 +1,8 @@
 /*-----HEADER HOMEPAGE------*/
 header{
+    .mainLogo{
+        @include flex(center,center)
+    }
     background-color: black;
         width: 100%;
         padding: 2px;
@@ -8,33 +11,32 @@ header{
         img{
             width: 80px;
         }
-}
-.mainLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mainTitle{
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-.container-fluid {
-    a {
+    .mainTitle{
         color: white;
+        text-align: center;
         font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-bottom: 30px;
     }
 }
-.navbar {
-    padding-bottom: 50px;
+
+nav{
+    .navbar {
+        padding-bottom: 50px;
+    }
+    .container-fluid {
+        a {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .custom-toggler {
+            color: white;
+            border-color: white;
+            background-color: white;
+        }
+    }
 }
-.custom-toggler {
-    color: white;
-    border-color: white;
-    background-color: white;
-}
+
 .btn-white {
     background-color: white;
     color: black;
@@ -45,41 +47,14 @@ header{
 .headerProductos{
     background-color: black;
 }
-
-.letraProductos{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 /*----------header SOBRE NOSOTROS--------*/
-
 .headerJordans{
     background-color: gray;
 }
-
-.letraJordans{
-    font-family: 'Times New Roman', Times, serif;
-}
-
 /*-------HEADER PREGUNTAS FRECUENTES----------*/
 .headerYeezys {
     background-color: grey;
 }
-.colorYeezys {
-    color: white;
-}
-.letraYeezys {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.navYeezys {
-    ul {
-        li {
-            a {
-                color: white;
-            }
-        }
-    }
-}
-
 /*-------------HEADER CONTACTO--------------*/
 .headerContacto{
     background-color: black;
