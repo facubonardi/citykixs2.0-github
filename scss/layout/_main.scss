@@ -6,10 +6,6 @@ main{
         text-align: center;
         color: white;
         padding-bottom: 1px;
-    
-        h2 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
     }
     .subTitulos {
         background-color: black;
@@ -21,7 +17,6 @@ main{
         padding-top: 5px;
     
         h2 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
             padding-bottom: 0px;
         }
     }
@@ -29,10 +24,6 @@ main{
         text-align: center;
         color: white;
         padding-bottom: 1px;
-    
-        h3 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
     }
     .fondoMain {
         background-image: url(https://m.media-amazon.com/images/I/71AbdOgwNuL._AC_UF894,1000_QL80_.jpg);
@@ -47,7 +38,6 @@ main{
 
 .letraCajas {
     h2 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         margin-bottom: -11px;
     }
@@ -99,7 +89,6 @@ main{
 .page-link {
     color: white;
     background-color: black;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /*-----------MAIN PRODUCTOS-------------------------*/
@@ -110,12 +99,10 @@ main{
 
 main{
     .primeraFila{
-        display: flex;
-        justify-content: center;
+        @extend .segundaFila
         }
         .titulosProductos{
             color: white;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-decoration: underline;
             margin-left: 40px;
         }
@@ -153,10 +140,9 @@ main{
 main{
     .titulosPreguntas {
         text-align: center;
-        font-size: 40px;
+        font-size: map-get($size , title);
         margin-top: -10px;
         margin-bottom: 20px;
-        font-family: 'Times New Roman', Times, serif;
         text-decoration: underline;
     }
     .metodosPago, .entregas, .devoluciones, .seguimiento {
@@ -182,25 +168,16 @@ main{
         h2 {
             margin-bottom: 30px;
             margin-top: 0px;
-            font-family: 'Times New Roman', Times, serif;
             text-decoration: underline;
         }
         .fotoEquipo{
-            width: 400px;
-            border-radius: 10%;
-            margin-bottom: 30px;
-
+            @include card
         }
         .misionVision{
-            width: 400px;
-            border-radius: 10%;
-            margin-bottom: 30px;
-
+            @include card
         }
         .tiendaVirtual{
-            width: 400px;
-            border-radius: 10%;
-            margin-bottom: 30px;
+            @include card
         }
     }
 }
@@ -240,7 +217,6 @@ main{
         margin-bottom: 20px;
         margin-top: 20px;
         text-decoration: underline;
-        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .parrafoContacto{
         margin-bottom: 20px;
@@ -248,6 +224,5 @@ main{
     .navPage{
         display: flex;
         justify-content: center;
-
     }
 }

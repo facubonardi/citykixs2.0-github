@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 /*-----MEDIA QUIRES-------*/
@@ -24,7 +25,7 @@
   .jordanRojas {
     margin-right: 100px;
   }
-  .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila {
+  .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila, main .primeraFila {
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -121,6 +122,7 @@
   .navPage {
     padding: 20px;
   }
+  /*--------Sobre nosotros-----*/
   .fotoEquipo {
     width: auto;
   }
@@ -153,7 +155,6 @@ header img {
 header .mainTitle {
   color: white;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
   font-size: 15px;
   margin-bottom: 30px;
 }
@@ -163,7 +164,6 @@ nav .navbar {
 }
 nav .container-fluid a {
   color: white;
-  font-family: "Times New Roman", Times, serif;
 }
 nav .container-fluid .custom-toggler {
   color: white;
@@ -174,7 +174,6 @@ nav .container-fluid .custom-toggler {
 .btn-white {
   background-color: white;
   color: black;
-  font-family: "Times New Roman", Times, serif;
 }
 
 /*-------HEADER PRODUCTOS------*/
@@ -184,12 +183,12 @@ nav .container-fluid .custom-toggler {
 
 /*----------header SOBRE NOSOTROS--------*/
 .headerJordans {
-  background-color: gray;
+  background-color: black;
 }
 
 /*-------HEADER PREGUNTAS FRECUENTES----------*/
 .headerYeezys {
-  background-color: grey;
+  background-color: black;
 }
 
 /*-------------HEADER CONTACTO--------------*/
@@ -204,9 +203,6 @@ main .suscribiteClub {
   color: white;
   padding-bottom: 1px;
 }
-main .suscribiteClub h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 main .subTitulos {
   background-color: black;
   margin-top: -5px;
@@ -217,16 +213,12 @@ main .subTitulo1 {
   padding-top: 5px;
 }
 main .subTitulo1 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
   padding-bottom: 0px;
 }
 main .subTitulo2 {
   text-align: center;
   color: white;
   padding-bottom: 1px;
-}
-main .subTitulo2 h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 main .fondoMain {
   background-image: url(https://m.media-amazon.com/images/I/71AbdOgwNuL._AC_UF894,1000_QL80_.jpg);
@@ -238,7 +230,6 @@ main .fondoMain {
 }
 
 .letraCajas h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   margin-bottom: -11px;
 }
@@ -288,7 +279,6 @@ main .fondoMain {
 .page-link {
   color: white;
   background-color: black;
-  font-family: "Times New Roman", Times, serif;
 }
 
 /*-----------MAIN PRODUCTOS-------------------------*/
@@ -297,13 +287,8 @@ main .fondoMain {
   padding-bottom: 1px;
 }
 
-main .primeraFila {
-  display: flex;
-  justify-content: center;
-}
 main .titulosProductos {
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-decoration: underline;
   margin-left: 40px;
 }
@@ -322,7 +307,7 @@ main .colorCajasProd .botonProductos:hover {
   color: burlywood;
   transform: scale(1.05);
 }
-main .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila {
+main .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila, main .primeraFila {
   display: flex;
   justify-content: center;
 }
@@ -332,7 +317,6 @@ main .titulosPreguntas {
   font-size: 40px;
   margin-top: -10px;
   margin-bottom: 20px;
-  font-family: "Times New Roman", Times, serif;
   text-decoration: underline;
 }
 main .metodosPago, main .entregas, main .devoluciones, main .seguimiento {
@@ -359,7 +343,6 @@ main .titulosSobreNos {
 main .titulosSobreNos h2 {
   margin-bottom: 30px;
   margin-top: 0px;
-  font-family: "Times New Roman", Times, serif;
   text-decoration: underline;
 }
 main .titulosSobreNos .fotoEquipo {
@@ -415,7 +398,6 @@ main .tituloContacto {
   margin-bottom: 20px;
   margin-top: 20px;
   text-decoration: underline;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 main .parrafoContacto {
   margin-bottom: 20px;
@@ -448,7 +430,6 @@ footer .itemsFooter .listasFooter {
 }
 footer .itemsFooter .listasFooter .titulosFooter {
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
   font-size: larger;
   color: white;
 }
@@ -460,12 +441,12 @@ footer .itemsFooter .listasFooter .titulosFooter {
 
 /*----------fOOTER SOBRE NOS---------*/
 .colorFooterJordans {
-  background-color: gray;
+  background-color: black;
 }
 
 /*----------FOOTER PREGUNTAS FREC---------*/
 .colorFooterYeezys {
-  background-color: grey;
+  background-color: black;
 }
 
 .letraFooterYeezys ul li {

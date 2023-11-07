@@ -1,6 +1,6 @@
 /*----------FOOTER MAIN----------*/
 footer{
-    background-color: black;
+    background-color: $footer-color;
     width: 100%;
     padding: 3px;
     top: 0;
@@ -18,7 +18,6 @@ footer{
             margin: 15px 100px;
             .titulosFooter{
                 font-weight: bold;
-                font-family: 'Times New Roman', Times, serif;
                 font-size: larger;
                 color: white;
             }            
@@ -28,15 +27,15 @@ footer{
 
 /*--------------FOOTER PRODUCTOS-----------*/
 .colorFooterProductos{
-    background-color: black;
+    background-color: $footer-color;
 }
 /*----------fOOTER SOBRE NOS---------*/
 .colorFooterJordans{
-    background-color: gray;
+    background-color: $footer-color;
 }
 /*----------FOOTER PREGUNTAS FREC---------*/
 .colorFooterYeezys {
-    background-color: grey;
+    background-color: $footer-color;
 }
 .letraFooterYeezys {
     ul {
@@ -47,7 +46,7 @@ footer{
 }
 /*---------Footer CONTACTOS--------*/
 .colorFooterContactos{
-    background-color: black;
+    background-color: $footer-color;
     margin-top: -20px;
 }
 

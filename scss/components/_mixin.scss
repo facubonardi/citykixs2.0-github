@@ -3,3 +3,9 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin card{
+    width: 400px;
+    border-radius: 10%;
+    margin-bottom: 30px;
+}

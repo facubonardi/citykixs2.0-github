@@ -3,7 +3,7 @@ header{
     .mainLogo{
         @include flex(center,center)
     }
-    background-color: black;
+    background-color: $header-color;
         width: 100%;
         padding: 2px;
         top: 0;
@@ -14,7 +14,6 @@ header{
     .mainTitle{
         color: white;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
         margin-bottom: 30px;
     }
@@ -26,8 +25,7 @@ nav{
     }
     .container-fluid {
         a {
-            color: white;
-            font-family: 'Times New Roman', Times, serif;
+            color: $navbar-letter-color;
         }
         .custom-toggler {
             color: white;
@@ -40,22 +38,21 @@ nav{
 .btn-white {
     background-color: white;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /*-------HEADER PRODUCTOS------*/
 .headerProductos{
-    background-color: black;
+    background-color: $header-color;
 }
 /*----------header SOBRE NOSOTROS--------*/
 .headerJordans{
-    background-color: gray;
+    background-color: $header-color;
 }
 /*-------HEADER PREGUNTAS FRECUENTES----------*/
 .headerYeezys {
-    background-color: grey;
+    background-color: $header-color;
 }
 /*-------------HEADER CONTACTO--------------*/
 .headerContacto{
-    background-color: black;
+    background-color: $header-color;
 }
