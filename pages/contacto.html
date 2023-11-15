@@ -59,50 +59,79 @@
     <main class="fondoContacto">
         
         <h1>¡Gracias por ponerte en contacto con nosotros! Completa el formulario a continuación:</h1>
-        <img class="imagenContacto" src="https://img.freepik.com/fotos-premium/pongase-contacto-nosotros-mano-empresario-sosteniendo-telefono-inteligente-movil-icono-correo-telefono-correo-electronico_52701-38.jpg" alt="logo contactos">
+        <img class="imagenContacto" src="https://img.freepik.com/fotos-premium/pongase-contacto-nosotros-mano-empresario-sosteniendo-telefono-inteligente-movil-icono-correo-telefono-correo-electronico_52701-38.jpg" alt="imagen contactos">
 
         <h2 class="subtituloContacto">Dejanos tus datos para poder enterarte de las novedades mas recientes de City Kix's!</h2>
 
-        <form class="row g-3 needs-validation formulario" novalidate>
-            <div class="col-md-4">
+        <form class="needs-validation formulario" novalidate>
+            <div class="mb-3">
                 <label for="validationCustom01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
+                <input type="text" class="form-control form-control-sm" id="validationCustom01" maxlength="30" value="" required>
+                <div class="valid-feedback"></div>
             </div>
-            </div>
-            <div class="col-md-4">
+        
+            <div class="mb-3">
                 <label for="validationCustom02" class="form-label">Apellido/s</label>
-                <input type="text" class="form-control" id="validationCustom02" value="" required>
-            <div class="valid-feedback">
+                <input type="text" class="form-control form-control-sm" id="validationCustom02" maxlength="30" value="" required>
+                <div class="valid-feedback"></div>
             </div>
-            </div>
-            <div class="col-md-6">
+        
+            <div class="mb-3">
                 <label for="validationCustom03" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
+                <input type="text" class="form-control form-control-sm" id="validationCustom03" maxlength="30" required>
+                <div class="invalid-feedback"></div>
             </div>
-            </div>
-            <div class="col-md-3">
+        
+            <div class="mb-3">
                 <label for="validationCustom04" class="form-label">Provincia</label>
-                <select class="form-select" id="validationCustom04" required>
+                <select class="form-select form-control-sm" id="validationCustom04" required>
                     <option selected disabled value="">Elige...</option>
-                    <option>...</option>
-            </select>
-            <div class="invalid-feedback">
+                    <option>Buenos Aires</option>
+                    <option>Ciudad Autonoma de BSAS</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Cordoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Rios</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquen</option>
+                    <option>Rio Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tierra del Fuego</option>
+                    <option>Tucuman</option>
+                </select>
+                <div class="invalid-feedback"></div>
             </div>
-            </div>
-            <div class="col-md-3">
+        
+            <div class="mb-3">
                 <label for="validationCustom05" class="form-label">Codigo Postal</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
+                <input type="text" class="form-control form-control-sm" id="validationCustom05" maxlength="10" required>
+                <div class="invalid-feedback"></div>
             </div>
+        
+            <div class="mb-3 form-check">
             </div>
-            <div class="col-12">
-            <div class="form-check">
-            <div class="col-12">
+        
+            <div class="mb-3">
                 <button class="btn btn-primary" type="submit">Enviar Formulario</button>
             </div>
         </form>
+        
+        
+        
+        
+        
         
         
         <h2 class="tituloContacto">Metodos de Contacto</h2>
@@ -167,6 +196,8 @@
                 <li class="titulosFooter">INFORMACION DE LA EMPRESA</li>
                 <li>Acerca de City Kix's</li>
                 <li>Trabaja en nuestro equipo</li>
+                <li>Horarios de Atencion</li>
+                <li>Contactenos</li>
             </ul>
 
         </div>

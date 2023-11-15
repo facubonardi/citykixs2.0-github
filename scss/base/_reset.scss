@@ -20,6 +20,9 @@
             margin: 5px auto;
             border-radius: 5%;
         }
+        .titulosProductos{
+            text-decoration: dashed;
+        }
         .primeraFila{
             flex-wrap: wrap;
             justify-content: center;
@@ -100,15 +103,81 @@
         .formulario{
             padding: 20px;
         }
-        .fotoEquipo{
-            width: auto;
+        /*-------Sobre nos------*/
+
+        .titulosSobreNos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .misionVision{
-            width: auto;
+
+        .titulosSobreNos h2 {
+            font-size: 18px;
         }
-        .tiendaVirtual{
-            width: auto;
+
+        .titulosSobreNos p {
+            font-size: 14px;
+            text-align: justify;
+            margin-top: 10px;
+            margin-right: 5px;
         }
+
+        .fotoTienda,
+        .fotoMision,
+        .fotoTrabaja {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fotoTienda img,
+        .fotoMision img,
+        .fotoTrabaja img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /*-------Preg frec-----*/
+        .titulosPreguntas {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .metodosPago,
+        .entregas,
+        .devoluciones,
+        .seguimiento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .metodosPago img,
+        .entregas img,
+        .devoluciones img,
+        .seguimiento img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .metodosPago p,
+        .entregas p,
+        .devoluciones p,
+        .seguimiento p {
+            font-size: 14px;
+            text-align: justify;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
     }
 
     @media(max-width:320px){
@@ -121,7 +190,8 @@
         .cardUno{
             margin: 10px auto;
             border-radius: 5%;
-            width: auto;
+            max-width: 300px;
+            max-height: 450px;
         }
         .itemsFooter{
             margin-left: 15px;
@@ -132,20 +202,56 @@
         .navPage{
             padding: 20px;
         }
-/*--------Sobre nosotros-----*/
+    }
+        /*--------Sobre nosotros-----*/
         .fotoEquipo{
-            width: auto;
+            max-width: 300px;
+            margin-right: 10px;
         }
         .misionVision{
-            width: 100%;
+            max-width: 300px;
+            margin-right: 10px;
         }
         .tiendaVirtual{
-            width: 100%;
+            max-width: 300px;
+            margin-right: 10px;
         }
         .itemsFooter{
-            width: 100%;
+            text-align: center;
         }
-    }
+        /*-----Preg frec--------*/
+        .fotoMetodos{
+            max-width: 300px;
+        }
+        .fotoEntregas{
+            max-width: 300px;
+        }
+        .fotoDevoluciones{
+            max-width: 300px;
+        }
+        .fotoSeguimiento{
+            max-width: 300px;
+        }
+        .metodosPago{
+            p{
+                text-align: center;
+            }
+        }
+        .entregas{
+            p{
+                text-align: center;
+            }
+        }
+        .devoluciones{
+            p{
+                text-align: center;
+            }
+        }
+        .seguimiento{
+            p{
+                text-align: center;
+            }
+        }
 
 
         

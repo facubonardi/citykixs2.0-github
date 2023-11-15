@@ -26,6 +26,9 @@ nav{
     .container-fluid {
         a {
             color: $navbar-letter-color;
+            &:hover{
+                color: grey;
+            }
         }
         .custom-toggler {
             color: white;
@@ -38,6 +41,9 @@ nav{
 .btn-white {
     background-color: white;
     color: black;
+    &:hover{
+        color: red;
+    }
 }
 
 /*-------HEADER PRODUCTOS------*/
@@ -56,3 +62,5 @@ nav{
 .headerContacto{
     background-color: $header-color;
 }
+
+/*---------- HEADER 404--------------*/

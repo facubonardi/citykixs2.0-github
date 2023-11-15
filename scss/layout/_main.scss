@@ -43,6 +43,8 @@ main{
     }
     p {
         color: white;
+        margin-bottom: 5px;
+        margin-top: 8px;
     }
 }
 .botonMain {
@@ -89,6 +91,7 @@ main{
 .page-link {
     color: white;
     background-color: black;
+    margin-bottom: 10px;
 }
 
 /*-----------MAIN PRODUCTOS-------------------------*/
@@ -170,12 +173,27 @@ main{
             margin-top: 0px;
             text-decoration: underline;
         }
+    .fotoTrabaja{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
         .fotoEquipo{
             @include card
         }
+    .fotoMision{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
         .misionVision{
             @include card
         }
+    .fotoTienda{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
         .tiendaVirtual{
             @include card
         }
@@ -209,6 +227,8 @@ main{
         margin-top: 50px;
         margin-left: 20px;
         margin-bottom: 20px;
+        max-width: 75%;
+        
         .btn{
             background-color: black;
         }
@@ -217,12 +237,32 @@ main{
         margin-bottom: 20px;
         margin-top: 20px;
         text-decoration: underline;
+        margin-left: 20px;
     }
     .parrafoContacto{
         margin-bottom: 20px;
+        margin-left: 20px;
     }
     .navPage{
         display: flex;
         justify-content: center;
     }
 }
+
+/*-----------------MAIN 404-------------*/
+.fondoError{
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Ferror-404-page-found-natural-concept-illustration-background-web-missing-landing-page_29677463.htm&psig=AOvVaw3Wz3doqWU_NS0hex3Cu_fR&ust=1699970412304000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjijraRwYIDFQAAAAAdAAAAABAg);
+    display: flex;
+    justify-content: center;
+}
+
+.imagenError{
+    width: 100%;
+}
+
+.tituloError{
+    text-align: center;
+}
+
+
+

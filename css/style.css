@@ -18,6 +18,9 @@
     margin: 5px auto;
     border-radius: 5%;
   }
+  .titulosProductos {
+    text-decoration: dashed;
+  }
   .primeraFila {
     flex-wrap: wrap;
     justify-content: center;
@@ -91,14 +94,71 @@
   .formulario {
     padding: 20px;
   }
-  .fotoEquipo {
-    width: auto;
+  /*-------Sobre nos------*/
+  .titulosSobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .misionVision {
-    width: auto;
+  .titulosSobreNos h2 {
+    font-size: 18px;
   }
-  .tiendaVirtual {
-    width: auto;
+  .titulosSobreNos p {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .fotoTienda,
+  .fotoMision,
+  .fotoTrabaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .fotoTienda img,
+  .fotoMision img,
+  .fotoTrabaja img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  /*-------Preg frec-----*/
+  .titulosPreguntas {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .metodosPago,
+  .entregas,
+  .devoluciones,
+  .seguimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .metodosPago img,
+  .entregas img,
+  .devoluciones img,
+  .seguimiento img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .metodosPago p,
+  .entregas p,
+  .devoluciones p,
+  .seguimiento p {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 320px) {
@@ -111,7 +171,8 @@
   .cardUno {
     margin: 10px auto;
     border-radius: 5%;
-    width: auto;
+    max-width: 300px;
+    max-height: 450px;
   }
   .itemsFooter {
     margin-left: 15px;
@@ -122,20 +183,60 @@
   .navPage {
     padding: 20px;
   }
-  /*--------Sobre nosotros-----*/
-  .fotoEquipo {
-    width: auto;
-  }
-  .misionVision {
-    width: 100%;
-  }
-  .tiendaVirtual {
-    width: 100%;
-  }
-  .itemsFooter {
-    width: 100%;
-  }
 }
+/*--------Sobre nosotros-----*/
+.fotoEquipo {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.misionVision {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.tiendaVirtual {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.itemsFooter {
+  text-align: center;
+}
+
+/*-----Preg frec--------*/
+.fotoMetodos {
+  max-width: 300px;
+}
+
+.fotoEntregas {
+  max-width: 300px;
+}
+
+.fotoDevoluciones {
+  max-width: 300px;
+}
+
+.fotoSeguimiento {
+  max-width: 300px;
+}
+
+.metodosPago p {
+  text-align: center;
+}
+
+.entregas p {
+  text-align: center;
+}
+
+.devoluciones p {
+  text-align: center;
+}
+
+.seguimiento p {
+  text-align: center;
+}
+
 /*-----HEADER HOMEPAGE------*/
 header {
   background-color: black;
@@ -165,6 +266,9 @@ nav .navbar {
 nav .container-fluid a {
   color: white;
 }
+nav .container-fluid a:hover {
+  color: grey;
+}
 nav .container-fluid .custom-toggler {
   color: white;
   border-color: white;
@@ -174,6 +278,9 @@ nav .container-fluid .custom-toggler {
 .btn-white {
   background-color: white;
   color: black;
+}
+.btn-white:hover {
+  color: red;
 }
 
 /*-------HEADER PRODUCTOS------*/
@@ -196,6 +303,7 @@ nav .container-fluid .custom-toggler {
   background-color: black;
 }
 
+/*---------- HEADER 404--------------*/
 /*----------MAIN HOMEPAGE----------*/
 main .suscribiteClub {
   background-color: black;
@@ -235,6 +343,8 @@ main .fondoMain {
 }
 .letraCajas p {
   color: white;
+  margin-bottom: 5px;
+  margin-top: 8px;
 }
 
 .botonMain {
@@ -279,6 +389,7 @@ main .fondoMain {
 .page-link {
   color: white;
   background-color: black;
+  margin-bottom: 10px;
 }
 
 /*-----------MAIN PRODUCTOS-------------------------*/
@@ -345,15 +456,30 @@ main .titulosSobreNos h2 {
   margin-top: 0px;
   text-decoration: underline;
 }
+main .titulosSobreNos .fotoTrabaja {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 main .titulosSobreNos .fotoEquipo {
   width: 400px;
   border-radius: 10%;
   margin-bottom: 30px;
 }
+main .titulosSobreNos .fotoMision {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 main .titulosSobreNos .misionVision {
   width: 400px;
   border-radius: 10%;
   margin-bottom: 30px;
+}
+main .titulosSobreNos .fotoTienda {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 main .titulosSobreNos .tiendaVirtual {
   width: 400px;
@@ -390,6 +516,7 @@ main .formulario {
   margin-top: 50px;
   margin-left: 20px;
   margin-bottom: 20px;
+  max-width: 75%;
 }
 main .formulario .btn {
   background-color: black;
@@ -398,13 +525,30 @@ main .tituloContacto {
   margin-bottom: 20px;
   margin-top: 20px;
   text-decoration: underline;
+  margin-left: 20px;
 }
 main .parrafoContacto {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 main .navPage {
   display: flex;
   justify-content: center;
+}
+
+/*-----------------MAIN 404-------------*/
+.fondoError {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Ferror-404-page-found-natural-concept-illustration-background-web-missing-landing-page_29677463.htm&psig=AOvVaw3Wz3doqWU_NS0hex3Cu_fR&ust=1699970412304000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjijraRwYIDFQAAAAAdAAAAABAg);
+  display: flex;
+  justify-content: center;
+}
+
+.imagenError {
+  width: 100%;
+}
+
+.tituloError {
+  text-align: center;
 }
 
 /*----------FOOTER MAIN----------*/
