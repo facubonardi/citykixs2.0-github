@@ -14,55 +14,33 @@
   .carousel-item img {
     height: auto;
   }
+  /*------Productos------*/
   .cardUno {
     margin: 5px auto;
     border-radius: 5%;
   }
-  .titulosProductos {
-    text-decoration: dashed;
-  }
   .primeraFila {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  .jordanRojas {
-    margin-right: 100px;
+    justify-content: space-between;
   }
   .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila, main .primeraFila {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .travisMarrones {
-    margin-right: 180px;
-    margin-top: 40px;
-  }
   .terceraFila {
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .yeezysNegras {
-    margin-right: 180px;
-    margin-top: 40px;
   }
   .cuartaFila {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .vansMarrones {
-    margin-right: 180px;
-    margin-top: 40px;
-  }
   .quintaFila {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .forumBlancas {
-    margin-right: 180px;
-    margin-top: 30px;
-  }
-  .titulosProductos h2 {
-    font-size: 10px;
-    margin-left: -20px;
+  .titulosProductos {
+    margin-left: 0px;
   }
   .colorFooter {
     background-color: #000000;
@@ -83,6 +61,7 @@
   .titulosFooter {
     font-weight: bold;
   }
+  /*------Contactos---------*/
   .formulario {
     padding: 20px;
   }
@@ -171,11 +150,11 @@
   .cardUno {
     margin: 10px auto;
     border-radius: 5%;
-    max-width: 300px;
+    max-width: 310px;
     max-height: 450px;
   }
   .itemsFooter {
-    margin-left: 15px;
+    margin-left: -30px;
   }
   .formulario {
     padding: 20px;
@@ -223,18 +202,22 @@
 
 .metodosPago p {
   text-align: center;
+  margin-left: -10px;
 }
 
 .entregas p {
   text-align: center;
+  margin-left: -10px;
 }
 
 .devoluciones p {
   text-align: center;
+  margin-left: -10px;
 }
 
 .seguimiento p {
   text-align: center;
+  margin-left: -10px;
 }
 
 /*-----HEADER HOMEPAGE------*/
@@ -422,7 +405,7 @@ main .segundaFila, main .quintaFila, main .cuartaFila, main .terceraFila, main .
   display: flex;
   justify-content: center;
 }
-/*-------------MAIN PREG FREC----------*/
+/*-------------MAIN PREGFREC----------*/
 main .titulosPreguntas {
   text-align: center;
   font-size: 40px;

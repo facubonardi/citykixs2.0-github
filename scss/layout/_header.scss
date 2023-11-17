@@ -14,11 +14,10 @@ header{
     .mainTitle{
         color: white;
         text-align: center;
-        font-size: 15px;
+        font-size: map-get($size , main-title);
         margin-bottom: 30px;
     }
 }
-
 nav{
     .navbar {
         padding-bottom: 50px;
@@ -37,7 +36,6 @@ nav{
         }
     }
 }
-
 .btn-white {
     background-color: white;
     color: black;
@@ -45,7 +43,6 @@ nav{
         color: red;
     }
 }
-
 /*-------HEADER PRODUCTOS------*/
 .headerProductos{
     background-color: $header-color;
@@ -62,5 +59,4 @@ nav{
 .headerContacto{
     background-color: $header-color;
 }
-
 /*---------- HEADER 404--------------*/

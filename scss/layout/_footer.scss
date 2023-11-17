@@ -18,7 +18,7 @@ footer{
             margin: 15px 100px;
             .titulosFooter{
                 font-weight: bold;
-                font-size: larger;
+                font-size: map-get($size , titulos-footer);
                 color: white;
             }            
         }

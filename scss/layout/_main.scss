@@ -1,5 +1,4 @@
 /*----------MAIN HOMEPAGE----------*/
-
 main{
     .suscribiteClub {
         background-color: black;
@@ -34,8 +33,6 @@ main{
         padding-bottom: 1px;
     }
 }
-
-
 .letraCajas {
     h2 {
         color: white;
@@ -139,7 +136,8 @@ main{
         @extend .segundaFila
         }
     }
-/*-------------MAIN PREG FREC----------*/
+
+/*-------------MAIN PREGFREC----------*/
 main{
     .titulosPreguntas {
         text-align: center;
@@ -255,14 +253,9 @@ main{
     display: flex;
     justify-content: center;
 }
-
 .imagenError{
     width: 100%;
 }
-
 .tituloError{
     text-align: center;
 }
-
-
-
